@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analyze Contract — ClauseGuard AI</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<header class="header"><div class="headerInner"><a class="logo" href="/"><div class="logoMark">⚖</div><div>ClauseGuard <span>AI</span><small>Contract Intelligence</small></div></a><nav class="nav"><a href="/">Home</a><a class="active" href="/analyze.html">Analyze</a><a href="/compare.html">Compare</a><a href="/faq.html">FAQ</a><a href="#footer">Contact</a></nav><a class="headerCta" href="/analyze.html">Get Started</a></div></header>
+<main><div class="container">
+<div class="pageHead"><div class="eyebrow">WORKSPACE / ANALYZE</div><h2>Analyze Contract</h2><p>Upload your contract and tell us about your situation.</p></div>
+
+<div class="workspaceGrid">
+<div class="panel"><div class="panelHead"><div><h3>1. Upload Contract</h3><small>We support PDF, DOCX, TXT files (Max 20MB)</small></div><span class="step">01</span></div>
+<label class="drop"><input id="file" type="file" accept=".pdf,.txt,.md,.docx"><div class="cloud">⇧</div><h3>Drag & drop your file here</h3><p>or</p><button type="button" class="btn btnPrimary">Browse Files</button><small>PDF · DOCX · TXT · Maximum 20MB</small></label>
+<div id="fileInfo" class="selected hidden"></div>
+<div class="or"><span>OR PASTE CONTRACT TEXT</span></div>
+<textarea id="contract" class="contractText" placeholder="Paste your contract text here..."></textarea></div>
+
+<div class="panel"><div class="panelHead"><div><h3>2. Your Situation</h3><small>Help our AI understand your context</small></div><span class="step">02</span></div>
+<textarea id="context" class="situation" placeholder="Example: I am a student renting an apartment for a one-year project. I want limited flexibility, low upfront cost, and may need to leave early."></textarea>
+<div class="note">💡 Selecting priorities helps our AI focus on what matters most to you.</div>
+<h4 style="font-size:11px;margin:16px 0 8px">WHAT MATTERS MOST TO YOU?</h4>
+<div class="priorities"><button class="priority">💰 Lower Cost</button><button class="priority">◌ Flexibility</button><button class="priority">🛡 Protection</button><button class="priority">🔒 Privacy</button><button class="priority">▣ Easy Exit</button><button class="priority">◎ Fast Payments</button></div>
+<button id="analyzeBtn" class="btn btnPrimary full">Analyze Contract →</button></div>
+
+<div class="panel analysisPreview"><div class="panelHead"><div><h3>3. AI Analysis</h3><small>Results will appear after analysis</small></div><span class="step">03</span></div>
+<div class="previewGauge"><b>—</b></div><h3 style="font-size:15px">Ready to analyze</h3><p style="font-size:11px;color:#7b8292">Upload a contract and provide your situation to generate a personalized risk profile.</p>
+<div class="previewList"><div>Risk Overview</div><div>Clause Distribution</div><div>Context Conflicts</div><div>Evidence & Recommendations</div></div></div>
+</div>
+
+<div id="load" class="loading hidden">Reading document → extracting clauses → matching context → calculating exposure…</div>
+<div id="analysis"></div>
+</div></main>
+<footer class="footer" id="footer">ClauseGuard AI · Contract intelligence for better decisions.</footer>
+<script src="/static/common.js"></script><script src="/static/analyze.js"></script>
+</body></html>

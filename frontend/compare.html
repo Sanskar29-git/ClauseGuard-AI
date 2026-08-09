@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compare Contracts — ClauseGuard AI</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<header class="header"><div class="headerInner"><a class="logo" href="/"><div class="logoMark">⚖</div><div>ClauseGuard <span>AI</span><small>Contract Intelligence</small></div></a><nav class="nav"><a href="/">Home</a><a href="/analyze.html">Analyze</a><a class="active" href="/compare.html">Compare</a><a href="/faq.html">FAQ</a><a href="#footer">Contact</a></nav><a class="headerCta" href="/analyze.html">Get Started</a></div></header>
+<main><div class="container">
+<div class="pageHead"><div class="eyebrow">WORKSPACE / COMPARE</div><h2>Compare Contracts</h2><p>Upload two contracts and see key differences side by side.</p></div>
+
+<div class="compareUpload">
+<div class="panel"><div class="panelHead"><div><h3>Contract A</h3><small>Upload first contract</small></div><span class="step">A</span></div>
+<label class="compareDrop"><input id="fileA" type="file" accept=".pdf,.txt,.md,.docx"><b>⇧</b><strong>Drag & drop file here</strong><button type="button">Browse Files</button></label><div id="infoA" class="selected hidden"></div><textarea id="textA" class="compareText" placeholder="Or paste Contract A text..."></textarea></div>
+<div class="versus">VS</div>
+<div class="panel"><div class="panelHead"><div><h3>Contract B</h3><small>Upload second contract</small></div><span class="step">B</span></div>
+<label class="compareDrop"><input id="fileB" type="file" accept=".pdf,.txt,.md,.docx"><b>⇧</b><strong>Drag & drop file here</strong><button type="button">Browse Files</button></label><div id="infoB" class="selected hidden"></div><textarea id="textB" class="compareText" placeholder="Or paste Contract B text..."></textarea></div>
+</div>
+
+<div class="panel compareControls"><textarea id="compareContext" placeholder="Tell us what matters most to you: lower cost, flexibility, stronger privacy, lower liability..."></textarea><select id="priority"><option value="balanced">Balanced decision</option><option value="cost">Lowest cost</option><option value="flexibility">Maximum flexibility</option><option value="security">Security & Protection</option><option value="business">Business-friendly</option></select><button id="compareBtn" class="btn btnPrimary">Compare Contracts →</button></div>
+<div id="compareOut"></div>
+</div></main>
+<footer class="footer" id="footer">ClauseGuard AI · Contract intelligence for better decisions.</footer>
+<script src="/static/common.js"></script><script src="/static/compare.js"></script>
+</body></html>
